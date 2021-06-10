@@ -1,5 +1,16 @@
 # Upsert Databricks Notebooks
 
+
+### GitHub Secrets
+Your repository must have these two variables:
+- DATABRICKS_HOST (should begin with https://)
+- DATABRICKS_TOKEN ([Generate a personal access token](https://docs.databricks.com/dev-tools/api/latest/authentication.html#generate-a-personal-access-token))
+
+Example:
+![secrets](https://user-images.githubusercontent.com/17178349/121604485-f9952f00-ca20-11eb-848f-96b862e4a442.png)
+
+
+
 ```yaml
 name: UpsertDatabricksNotebook
 
