@@ -1,4 +1,4 @@
-# Upser tDatabricks Notebooks
+# Upsert Databricks Notebooks
 
 ```yaml
 name: UpsertDatabricksNotebook
