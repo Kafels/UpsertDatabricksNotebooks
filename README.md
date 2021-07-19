@@ -1,5 +1,3 @@
-# Upsert Databricks Notebooks
-
 # Requisites
 - Connect Databricks to GitHub. Step by step [here](https://docs.databricks.com/repos.html)
 - Create a GitHub Action. See an example [here](https://docs.github.com/en/actions/quickstart)
@@ -8,7 +6,7 @@
 
 ---
 
-### GitHub Secrets
+# GitHub Secrets
 Your repository must have these two variables:
 - DATABRICKS_HOST (should begin with https://)
 - DATABRICKS_TOKEN ([Generate a personal access token](https://docs.databricks.com/dev-tools/api/latest/authentication.html#generate-a-personal-access-token))
@@ -18,7 +16,7 @@ Example:
 
 ---
 
-### YAML
+# YAML
 ```yaml
 name: UpsertDatabricksNotebook
 
