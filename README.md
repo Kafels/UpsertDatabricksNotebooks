@@ -1,5 +1,12 @@
 # Upsert Databricks Notebooks
 
+# Requisites
+- Connect Databricks to GitHub. Step by step [here](https://docs.databricks.com/repos.html)
+- Create a GitHub Action. See an example [here](https://docs.github.com/en/actions/quickstart)
+- Configure GitHub Secrets to hide sensitive credentials
+- Copy the provided YAML below and change `on` and `env` sections to fit your environment
+
+---
 
 ### GitHub Secrets
 Your repository must have these two variables:
@@ -9,8 +16,9 @@ Your repository must have these two variables:
 Example:
 ![secrets](https://user-images.githubusercontent.com/17178349/121604485-f9952f00-ca20-11eb-848f-96b862e4a442.png)
 
+---
 
-
+### YAML
 ```yaml
 name: UpsertDatabricksNotebook
 
