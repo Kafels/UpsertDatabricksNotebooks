@@ -16,13 +16,18 @@ name: UpsertDatabricksNotebook
 
 on:
   push:
+    # Branch to trigger this pipeline
     branches: [ master ]
-    paths: 
+    paths:
+      # The directory to watch commits
       - 'notebooks/Shared/development/**'
   pull_request:
+    # Also trigger when executing PR
     branches: [ master ]
 env:
+  # Databricks folder containing all development scripts
   DEV_FOLDER: '/Shared/development'
+  # Databricks folder where all development code must be uploaded 
   PRD_FOLDER: '/Shared/production'
 jobs:
   publish_on_production:
